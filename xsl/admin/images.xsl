@@ -39,8 +39,8 @@
 	<!-- List Images -->
 	<xsl:template match="content[../meta/action = 'index']">
 		<xsl:for-each select="images/image">
-			<a href="/admin/images/image?id={@id}" class="module" style="margin: 10px; border: solid 1px #ccc; padding: 5px; width: 168px; height: 200px;">
-				<div style="height: 150px; width: 150px; background: #ccc; padding: 3px; text-align: center;">
+			<a href="/admin/images/image?id={@id}" class="module" style="margin: 10px; border: solid 1px #ccc; padding: 5px; width: 156px; height: 200px;">
+				<div style="height: 150px; width: 150px; padding: 3px; text-align: center;">
 					<img src="/user_content/images/{filename}?maxheight=150&amp;maxwidth=150" alt="" style="border: none; margin-left: auto; margin-right: auto;" />
 				</div>
 				<p><xsl:value-of select="name" /></p>
